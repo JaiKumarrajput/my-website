@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jai Kumar | Developer Story</title>
+  <meta name="description"
+    content="Jai Kumar — Full-stack developer crafting scalable web apps and AI-integrated products. An immersive journey through code, creativity, and craft." />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+</head>
+
+<body>
+  <!-- ======== CUSTOM CURSOR ======== -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- ======== LOADER ======== -->
+  <div class="loader" id="loader">
+    <div class="loader-bar">
+      <div class="loader-bar-fill" id="loader-fill"></div>
+    </div>
+    <span class="loader-text">Loading Experience</span>
+  </div>
+
+  <!-- ======== CANVAS BACKGROUND ======== -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ======== SCROLL PROGRESS ======== -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- ======== NAVIGATION ======== -->
+  <nav class="nav" id="main-nav">
+    <a href="#hero" class="nav-logo">JK.</a>
+    <ul class="nav-links">
+      <li><a href="#origin">Origin</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#missions">Projects</a></li>
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="mobile-menu-btn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-nav-overlay">
+    <ul class="mobile-nav-links">
+      <li><a href="#origin">Origin</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#missions">Projects</a></li>
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ================================================================
+       SCENE 01 — OPENING / HERO
+       ================================================================ -->
+  <section id="hero" class="hero">
+    <div class="hero-sticky">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="assets/wholebackground1.mp4" type="video/mp4" />
+      </video>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">Welcome to my universe</p>
+        <h1 class="hero-title">
+          <span class="line"><span class="line-inner">Every great product</span></span>
+          <span class="line"><span class="line-inner">starts with <span class="gradient-text">an
+                idea.</span></span></span>
+        </h1>
+        <p class="hero-subtitle">
+          I'm <strong>Jai Kumar</strong> — a full-stack developer who transforms ideas into
+          scalable, beautiful digital experiences. This is my story.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#missions" class="btn-primary">Explore My Work ↓</a>
+          <a href="assets/Jai Kumar SDE.pdf" class="btn-ghost" download>Download Resume</a>
+        </div>
+      </div>
+
+
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider">
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- ================================================================
+       SCENE 02 — ORIGIN STORY
+       ================================================================ -->
+  <section id="origin" class="section origin">
+    <div class="section-inner">
+      <p class="section-eyebrow">Chapter 01</p>
+      <h2 class="section-title">The Origin Story</h2>
+      <p class="section-desc">Every developer has a beginning. Here's where mine started.</p>
+
+      <div class="origin-grid">
+        <div class="origin-narrative">
+          <p>It began with curiosity — the kind that makes you take apart things just to see how they work. For me, it
+            wasn't hardware; it was software. The first time I saw code turn into something people could touch and use,
+            I was hooked.</p>
+          <p>I pursued a B.Tech in Computer Engineering at Graphic Era University, where I built the foundation —
+            algorithms, data structures, system design. But the real classroom was building things: websites, apps,
+            systems that solved real problems for real people.</p>
+          <p>An internship at Null Technology Edtech sharpened my edge. Working on production websites and portals
+            taught me what textbooks couldn't — deadline-driven development, clean architecture, and the art of shipping
+            code that works at scale.</p>
+        </div>
+
+        <div class="origin-stats">
+          <div class="stat-card">
+            <span class="stat-icon">🎓</span>
+            <span class="stat-value">B.Tech</span>
+            <span class="stat-label">Computer Engineering</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">🏫</span>
+            <span class="stat-value">GEU</span>
+            <span class="stat-label">Graphic Era University</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">💼</span>
+            <span class="stat-value">Intern</span>
+            <span class="stat-label">Null Tech Edtech</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">📜</span>
+            <span class="stat-value">16+</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider">
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- ================================================================
+       MARQUEE TRANSITION
+       ================================================================ -->
+  <div class="marquee-section">
+    <div class="marquee-inner">
+      <div class="marquee-text">
+        <span>DEVELOPER</span><span class="dot">•</span>
+        <span>DESIGNER</span><span class="dot">•</span>
+        <span>CREATOR</span><span class="dot">•</span>
+        <span>ENGINEER</span><span class="dot">•</span>
+      </div>
+      <div class="marquee-text" aria-hidden="true">
+        <span>DEVELOPER</span><span class="dot">•</span>
+        <span>DESIGNER</span><span class="dot">•</span>
+        <span>CREATOR</span><span class="dot">•</span>
+        <span>ENGINEER</span><span class="dot">•</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       SCENE 03 — SKILLS UNIVERSE
+       ================================================================ -->
+  <section id="skills" class="section skills">
+    <div class="section-inner">
+      <p class="section-eyebrow">Chapter 02</p>
+      <h2 class="section-title">The Arsenal</h2>
+      <p class="section-desc">Technologies I've mastered to turn visions into reality.</p>
+
+      <div class="skills-container">
+        <div class="skills-orbit">
+          <div class="skill-node"><span class="skill-emoji">🌐</span><span class="skill-label">HTML5</span></div>
+          <div class="skill-node"><span class="skill-emoji">🎨</span><span class="skill-label">CSS3</span></div>
+          <div class="skill-node"><span class="skill-emoji">⚡</span><span class="skill-label">JavaScript</span></div>
+          <div class="skill-node"><span class="skill-emoji">⚛️</span><span class="skill-label">React</span></div>
+          <div class="skill-node"><span class="skill-emoji">🐘</span><span class="skill-label">PHP</span></div>
+          <div class="skill-node"><span class="skill-emoji">🗄️</span><span class="skill-label">MySQL</span></div>
+          <div class="skill-node"><span class="skill-emoji">🔥</span><span class="skill-label">Firebase</span></div>
+          <div class="skill-node"><span class="skill-emoji">☕</span><span class="skill-label">Java</span></div>
+          <div class="skill-node"><span class="skill-emoji">📱</span><span class="skill-label">Android</span></div>
+          <div class="skill-node"><span class="skill-emoji">🔗</span><span class="skill-label">APIs</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider">
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- ================================================================
+       SCENE 04 — PROJECTS AS MISSIONS
+       ================================================================ -->
+  <section id="missions" class="section missions">
+    <div class="section-inner">
+      <p class="section-eyebrow">Chapter 03</p>
+      <h2 class="section-title">The Missions</h2>
+      <p class="section-desc">Every project is a story. Here are the ones that defined my craft.</p>
+
+      <div class="mission-list">
+
+        <!-- Mission 01 -->
+        <div class="mission">
+          <div class="mission-visual">
+            <span class="mission-number-overlay">01</span>
+            <img src="assets/amazon-clone.jpg" alt="Amazon Clone" />
+          </div>
+          <div class="mission-content">
+            <span class="mission-tag">Mission 01</span>
+            <h3 class="mission-title">Amazon Clone</h3>
+            <p class="mission-desc">A full-featured e-commerce platform replicating Amazon's core experience — from
+              product discovery to secure payment processing. Built with a modern React frontend, real-time Firebase
+              backend, and Stripe-powered checkout.</p>
+            <div class="mission-stack">
+              <span>React</span>
+              <span>Firebase</span>
+              <span>Stripe</span>
+              <span>Auth</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission 02 -->
+        <div class="mission">
+          <div class="mission-visual">
+            <span class="mission-number-overlay">02</span>
+            <img src="assets/banking-system.jpg" alt="Banking System" />
+          </div>
+          <div class="mission-content">
+            <span class="mission-tag">Mission 02</span>
+            <h3 class="mission-title">Microservices Banking</h3>
+            <p class="mission-desc">A robust online banking system built with microservices architecture — secure
+              account management, real-time transactions, and financial data processing. Designed for scale,
+              reliability, and enterprise-grade security.</p>
+            <div class="mission-stack">
+              <span>AngularJS</span>
+              <span>Microservices</span>
+              <span>REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission 03 -->
+        <div class="mission">
+          <div class="mission-visual">
+            <span class="mission-number-overlay">03</span>
+            <img src="assets/chat-application.png" alt="Chat Application" />
+          </div>
+          <div class="mission-content">
+            <span class="mission-tag">Mission 03</span>
+            <h3 class="mission-title">Real-Time Chat</h3>
+            <p class="mission-desc">A real-time desktop chat application enabling instant messaging through socket
+              connections. Features a clean Java Swing interface, multi-threaded server architecture, and reliable
+              message delivery.</p>
+            <div class="mission-stack">
+              <span>Java Swing</span>
+              <span>Socket.IO</span>
+              <span>Multithreading</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider">
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- ================================================================
+       SCENE 05 — PHILOSOPHY
+       ================================================================ -->
+  <section id="philosophy" class="section philosophy">
+    <div class="section-inner">
+      <p class="section-eyebrow">Chapter 04</p>
+      <h2 class="section-title">Development Philosophy</h2>
+      <p class="section-desc" style="margin: 0 auto;">How I approach building products that matter.</p>
+
+      <div class="philosophy-content">
+        <p class="philosophy-quote">
+          I believe great software is born at the intersection of
+          <span class="highlight">clean architecture</span>,
+          <span class="highlight">user empathy</span>, and
+          <span class="highlight">relentless iteration</span>.
+        </p>
+      </div>
+
+      <div class="philosophy-pillars">
+        <div class="pillar">
+          <span class="pillar-icon">🏗️</span>
+          <h3 class="pillar-title">Build to Scale</h3>
+          <p class="pillar-desc">Every line of code is written with scalability in mind — MVVM patterns, modular
+            architecture, and clean separation of concerns.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-icon">🎯</span>
+          <h3 class="pillar-title">User-First Design</h3>
+          <p class="pillar-desc">Technology should serve people. I start with user needs and work backwards to the
+            implementation, never the other way around.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-icon">🔄</span>
+          <h3 class="pillar-title">Ship & Iterate</h3>
+          <p class="pillar-desc">Perfect is the enemy of shipped. I believe in launching fast, gathering feedback, and
+            iterating toward excellence continuously.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider">
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- ================================================================
+       SCENE 06 — ACHIEVEMENTS
+       ================================================================ -->
+  <section id="achievements" class="section achievements">
+    <div class="section-inner">
+      <p class="section-eyebrow">Chapter 05</p>
+      <h2 class="section-title">The Milestone</h2>
+      <p class="section-desc">A breakthrough moment that defined the journey.</p>
+
+      <div class="achievement-showcase">
+        <div class="achievement-header">
+          <h3>We Launched IPTV</h3>
+          <p>A broadcasting application launched with our organization — initially free for all users. Born from
+            collaboration, ambition, and a vision to democratize content.</p>
+        </div>
+
+        <div class="achievement-grid">
+          <div class="achievement-item"><img src="assets/project1.jpg" alt="IPTV Screenshot 1" /></div>
+          <div class="achievement-item"><img src="assets/project2.jpg" alt="IPTV Screenshot 2" /></div>
+          <div class="achievement-item"><img src="assets/project3.jpg" alt="IPTV Screenshot 3" /></div>
+          <div class="achievement-item"><img src="assets/project4.jpg" alt="IPTV Screenshot 4" /></div>
+          <div class="achievement-item"><img src="assets/project5.jpg" alt="IPTV Screenshot 5" /></div>
+          <div class="achievement-item"><img src="assets/project6.jpg" alt="IPTV Screenshot 6" /></div>
+          <div class="achievement-item"><img src="assets/project7.jpg" alt="IPTV Screenshot 7" /></div>
+          <div class="achievement-item"><img src="assets/Project8.jpg" alt="IPTV Screenshot 8" /></div>
+          <div class="achievement-item"><img src="assets/project9.jpg" alt="IPTV Screenshot 9" /></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider">
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- ================================================================
+       SCENE 07 — CONTACT / CTA
+       ================================================================ -->
+  <section id="contact" class="section contact">
+    <div class="section-inner">
+      <p class="section-eyebrow">Epilogue</p>
+      <h2 class="section-title">Let's Build Something<br />Extraordinary</h2>
+      <p class="section-desc" style="margin: 0 auto 60px;">
+        Every great collaboration starts with a conversation. Whether you have an idea,
+        a project, or just want to connect — I'd love to hear from you.
+      </p>
+
+      <form class="contact-form" action="https://formspree.io/f/{your-id}" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Tell me about your idea..." required></textarea>
+        <button type="submit">Send Message →</button>
+      </form>
+
+      <div class="contact-socials">
+        <a href="mailto:rajput.jai2004@gmail.com" class="social-pill">✉️ Email</a>
+        <a href="https://github.com/JaiKumarrajput" class="social-pill" target="_blank">⚡ GitHub</a>
+        <a href="https://linkedin.com/" class="social-pill" target="_blank">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p class="footer-text">© 2025 <span class="accent">Jai Kumar</span> · Crafted with passion and purpose</p>
+  </footer>
+
+  <!-- ================================================================
+       2D ANIMATED CHARACTER GUIDE (Realistic Version)
+       ================================================================ -->
+  <div class="character-guide" id="character-guide">
+    <div class="speech-bubble" id="speech-bubble">
+      <span class="speech-text" id="speech-text"></span>
+      <span class="speech-cursor">|</span>
+    </div>
+    <svg class="character-svg" viewBox="0 0 200 450" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <!-- Skin Gradient -->
+        <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#c48b71" />
+          <stop offset="50%" stop-color="#e8b89d" />
+          <stop offset="100%" stop-color="#d19c81" />
+        </linearGradient>
+
+        <!-- Hair Gradient -->
+        <linearGradient id="hair" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#2a2a35" />
+          <stop offset="100%" stop-color="#111118" />
+        </linearGradient>
+
+        <!-- Hoodie Fabric Gradient -->
+        <linearGradient id="fabric" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#1a1a2e" />
+          <stop offset="100%" stop-color="#0a0a14" />
+        </linearGradient>
+
+        <!-- Cyan Accent Glow -->
+        <radialGradient id="cyanGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.8" />
+          <stop offset="100%" stop-color="#00f0ff" stop-opacity="0" />
+        </radialGradient>
+
+        <!-- Iris Gradient -->
+        <radialGradient id="iris" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#4a3b2c" />
+          <stop offset="100%" stop-color="#1a120b" />
+        </radialGradient>
+
+        <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.4" />
+        </filter>
+        <filter id="inner-shadow">
+          <feOffset dx="0" dy="4" />
+          <feGaussianBlur stdDeviation="3" result="offset-blur" />
+          <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse" />
+          <feFlood flood-color="black" flood-opacity="0.5" result="color" />
+          <feComposite operator="in" in="color" in2="inverse" result="shadow" />
+          <feComposite operator="over" in="shadow" in2="SourceGraphic" />
+        </filter>
+      </defs>
+
+      <!-- Floor Shadow -->
+      <ellipse cx="100" cy="430" rx="60" ry="12" fill="url(#cyanGlow)" opacity="0.4" class="char-shadow" />
+      <ellipse cx="100" cy="430" rx="35" ry="6" fill="#000" opacity="0.6" filter="blur(4px)" class="char-shadow" />
+
+      <g class="char-torso">
+        <!-- Legs (Walking animation target) -->
+        <g class="char-legs">
+          <g class="char-leg-left">
+            <!-- Pant -->
+            <path d="M72 260 L84 260 L80 380 L66 380 Z" fill="#0f0f18" />
+            <path d="M78 260 L84 260 L80 380 L76 380 Z" fill="#1a1a28" /> <!-- Highlight -->
+            <!-- Shoe -->
+            <path d="M60 400 Q60 380 75 380 Q90 380 90 400 L90 410 Q90 415 80 415 L60 415 Z" fill="#111"
+              filter="url(#drop-shadow)" />
+            <path d="M60 410 L90 410 L90 415 Q80 418 60 415 Z" fill="#00f0ff" /> <!-- Sole glow -->
+          </g>
+
+          <g class="char-leg-right">
+            <!-- Pant -->
+            <path d="M116 260 L128 260 L122 380 L108 380 Z" fill="#0a0a10" />
+            <path d="M122 260 L128 260 L122 380 L118 380 Z" fill="#151520" /> <!-- Highlight -->
+            <!-- Shoe -->
+            <path d="M102 400 Q102 380 117 380 Q132 380 132 400 L132 410 Q132 415 122 415 L102 415 Z" fill="#111"
+              filter="url(#drop-shadow)" />
+            <path d="M102 410 L132 410 L132 415 Q122 418 102 415 Z" fill="#00f0ff" /> <!-- Sole glow -->
+          </g>
+        </g>
+
+        <!-- Torso -->
+        <g class="char-body">
+          <!-- Hoodie Base -->
+          <path d="M50 160 Q100 140 150 160 L140 280 Q100 290 60 280 Z" fill="url(#fabric)"
+            filter="url(#drop-shadow)" />
+
+          <!-- Fabric wrinkles -->
+          <path d="M70 180 Q80 200 75 240" stroke="#2a2a3e" stroke-width="2" fill="none" stroke-linecap="round" />
+          <path d="M130 180 Q120 200 125 240" stroke="#2a2a3e" stroke-width="2" fill="none" stroke-linecap="round" />
+          <path d="M90 260 Q100 270 110 260" stroke="#0a0a14" stroke-width="3" fill="none" />
+
+          <!-- Hoodie strings -->
+          <path d="M90 160 Q85 190 85 210" stroke="#00f0ff" stroke-width="2" fill="none" stroke-linecap="round"
+            opacity="0.8" />
+          <circle cx="85" cy="210" r="2" fill="#00f0ff" />
+          <path d="M110 160 Q115 190 115 210" stroke="#00f0ff" stroke-width="2" fill="none" stroke-linecap="round"
+            opacity="0.8" />
+          <circle cx="115" cy="210" r="2" fill="#00f0ff" />
+
+          <!-- Pocket -->
+          <path d="M70 230 L130 230 L140 270 L60 270 Z" fill="#121220" stroke="#00f0ff" stroke-width="0.5"
+            stroke-opacity="0.3" />
+          <path d="M70 230 Q80 250 70 270" stroke="#0a0a14" stroke-width="2" fill="none" />
+          <path d="M130 230 Q120 250 130 270" stroke="#0a0a14" stroke-width="2" fill="none" />
+
+          <!-- Zipper -->
+          <line x1="100" y1="160" x2="100" y2="280" stroke="#00f0ff" stroke-width="1.5" stroke-opacity="0.4" />
+        </g>
+
+        <!-- Left Arm (Back) -->
+        <g class="char-arm-left">
+          <path d="M55 165 Q30 200 40 250" stroke="url(#fabric)" stroke-width="18" fill="none" stroke-linecap="round" />
+          <!-- Hand -->
+          <circle cx="42" cy="255" r="10" fill="url(#skin)" />
+          <!-- Fingers -->
+          <path d="M35 255 Q35 265 40 265 M40 255 Q40 265 45 265 M45 255 Q45 265 50 265" stroke="#a3765c"
+            stroke-width="1.5" fill="none" stroke-linecap="round" />
+        </g>
+
+        <!-- Right Arm (Front Waving) -->
+        <g class="char-arm-right">
+          <!-- Sleeve -->
+          <path d="M145 165 Q175 190 160 230" stroke="url(#fabric)" stroke-width="18" fill="none" stroke-linecap="round"
+            filter="url(#drop-shadow)" />
+          <!-- Hand -->
+          <g class="char-hand-wave">
+            <circle cx="162" cy="240" r="11" fill="url(#skin)" />
+            <!-- Palm lines -->
+            <path d="M158 235 Q162 240 160 245" stroke="#a3765c" stroke-width="0.8" fill="none" />
+            <!-- Fingers -->
+            <path d="M152 235 Q145 230 148 220" stroke="url(#skin)" stroke-width="4.5" fill="none"
+              stroke-linecap="round" />
+            <path d="M158 232 Q155 220 158 210" stroke="url(#skin)" stroke-width="4.5" fill="none"
+              stroke-linecap="round" />
+            <path d="M164 232 Q165 220 168 212" stroke="url(#skin)" stroke-width="4.5" fill="none"
+              stroke-linecap="round" />
+            <path d="M170 235 Q175 230 176 222" stroke="url(#skin)" stroke-width="4" fill="none"
+              stroke-linecap="round" />
+            <!-- Thumb -->
+            <path d="M155 242 Q145 245 142 240" stroke="url(#skin)" stroke-width="4.5" fill="none"
+              stroke-linecap="round" />
+          </g>
+        </g>
+      </g>
+
+      <!-- Head & Neck -->
+      <g class="char-head">
+        <!-- Neck shadow & Base -->
+        <rect x="91" y="130" width="18" height="30" rx="6" fill="#a3765c" />
+        <rect x="91" y="130" width="18" height="20" rx="6" fill="url(#skin)" />
+
+        <!-- Ears -->
+        <path d="M68 95 Q60 100 66 115 Q72 120 72 105 Z" fill="url(#skin)" />
+        <path d="M66 102 Q64 108 68 110" stroke="#a3765c" stroke-width="1" fill="none" /> <!-- Ear detail -->
+
+        <path d="M132 95 Q140 100 134 115 Q128 120 128 105 Z" fill="url(#skin)" />
+        <path d="M134 102 Q136 108 132 110" stroke="#a3765c" stroke-width="1" fill="none" /> <!-- Ear detail -->
+
+        <!-- Head Base -->
+        <rect x="70" y="50" width="60" height="90" rx="30" fill="url(#skin)" filter="url(#inner-shadow)" />
+
+        <!-- Hair Volume -->
+        <path d="M70 80 Q65 40 100 35 Q135 40 130 80 Q135 45 100 30 Q65 45 70 80 Z" fill="url(#hair)" />
+        <path d="M65 85 Q75 60 100 65 Q125 60 135 85 Q130 50 100 55 Q70 50 65 85 Z" fill="#1a1a25" />
+        <!-- Hair Highlights -->
+        <path d="M80 45 Q90 38 100 40" stroke="#3a3a4a" stroke-width="2" fill="none" stroke-linecap="round" />
+        <path d="M110 45 Q120 42 125 50" stroke="#3a3a4a" stroke-width="1.5" fill="none" stroke-linecap="round" />
+
+        <!-- Eyes -->
+        <g class="char-eyes">
+          <!-- Left Eye -->
+          <g class="char-eye-left">
+            <ellipse cx="86" cy="100" rx="6" ry="7" fill="#f8f9fa" />
+            <!-- Iris -->
+            <ellipse cx="87" cy="100" rx="3.5" ry="4" fill="url(#iris)" />
+            <!-- Pupil -->
+            <ellipse cx="87" cy="100" rx="1.5" ry="2" fill="#000" />
+            <!-- Catchlights -->
+            <circle cx="86" cy="98" r="1.2" fill="#fff" />
+            <circle cx="88" cy="101" r="0.5" fill="#fff" opacity="0.6" />
+          </g>
+
+          <!-- Right Eye -->
+          <g class="char-eye-right">
+            <ellipse cx="114" cy="100" rx="6" ry="7" fill="#f8f9fa" />
+            <!-- Iris -->
+            <ellipse cx="113" cy="100" rx="3.5" ry="4" fill="url(#iris)" />
+            <!-- Pupil -->
+            <ellipse cx="113" cy="100" rx="1.5" ry="2" fill="#000" />
+            <!-- Catchlights -->
+            <circle cx="112" cy="98" r="1.2" fill="#fff" />
+            <circle cx="114" cy="101" r="0.5" fill="#fff" opacity="0.6" />
+          </g>
+
+          <!-- Eyelids / Blinks -->
+          <g class="char-blink">
+            <path d="M78 93 Q86 90 94 93 L94 108 L78 108 Z" fill="url(#skin)" opacity="0" />
+            <path d="M106 93 Q114 90 122 93 L122 108 L106 108 Z" fill="url(#skin)" opacity="0" />
+          </g>
+
+          <!-- Detailed Eyebrows -->
+          <path d="M78 90 Q85 85 94 88" stroke="#111" stroke-width="2.5" fill="none" stroke-linecap="round" />
+          <path d="M122 90 Q115 85 106 88" stroke="#111" stroke-width="2.5" fill="none" stroke-linecap="round" />
+        </g>
+
+        <!-- Nose -->
+        <path d="M98 108 L100 114 L104 114" stroke="#b08066" stroke-width="1.5" fill="none" stroke-linecap="round"
+          stroke-linejoin="round" />
+
+        <!-- Mouth -->
+        <g class="char-mouth">
+          <!-- Smile -->
+          <path d="M92 122 Q100 128 108 122" stroke="#8a5a46" stroke-width="1.8" fill="none" stroke-linecap="round" />
+          <!-- Dimples -->
+          <line x1="90" y1="120" x2="91" y2="123" stroke="#b08066" stroke-width="1" stroke-linecap="round" />
+          <line x1="110" y1="120" x2="109" y2="123" stroke="#b08066" stroke-width="1" stroke-linecap="round" />
+        </g>
+
+        <!-- Glasses (Premium style) -->
+        <g class="char-glasses">
+          <!-- Left Lens Frame -->
+          <rect x="76" y="93" width="22" height="18" rx="6" fill="rgba(0,240,255,0.05)" stroke="#00f0ff"
+            stroke-width="1.5" />
+          <!-- Right Lens Frame -->
+          <rect x="102" y="93" width="22" height="18" rx="6" fill="rgba(0,240,255,0.05)" stroke="#00f0ff"
+            stroke-width="1.5" />
+          <!-- Bridge -->
+          <path d="M98 102 Q100 100 102 102" stroke="#00f0ff" stroke-width="1.5" fill="none" />
+          <!-- Arm left -->
+          <path d="M76 100 L68 98" stroke="#00f0ff" stroke-width="1.5" fill="none" />
+          <!-- Arm right -->
+          <path d="M124 100 L132 98" stroke="#00f0ff" stroke-width="1.5" fill="none" />
+
+          <!-- Glass Reflection -->
+          <line x1="78" y1="95" x2="88" y2="108" stroke="#fff" stroke-width="2" opacity="0.3" />
+          <line x1="86" y1="95" x2="92" y2="103" stroke="#fff" stroke-width="1" opacity="0.2" />
+          <line x1="104" y1="95" x2="114" y2="108" stroke="#fff" stroke-width="2" opacity="0.3" />
+          <line x1="112" y1="95" x2="118" y2="103" stroke="#fff" stroke-width="1" opacity="0.2" />
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <!-- ================================================================
+       SCRIPTS — GSAP, Canvas, Animations
+       ================================================================ -->
+  <script>
+    // ============================================================
+    //  SMOOTH SCROLL (LENIS)
+    // ============================================================
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      direction: 'vertical',
+      gestureDirection: 'vertical',
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+    });
+
+    lenis.on('scroll', ScrollTrigger.update);
+
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000);
+    });
+    gsap.ticker.lagSmoothing(0);
+
+    // ============================================================
+    //  LOADING SCREEN
+    // ============================================================
+    const loaderFill = document.getElementById('loader-fill');
+    const loader = document.getElementById('loader');
+    let loadProgress = 0;
+
+    const loadInterval = setInterval(() => {
+      loadProgress += Math.random() * 25 + 10;
+      if (loadProgress >= 100) {
+        loadProgress = 100;
+        clearInterval(loadInterval);
+        setTimeout(() => {
+          loader.classList.add('hidden');
+          initAnimations();
+        }, 400);
+      }
+      loaderFill.style.width = loadProgress + '%';
+    }, 200);
+
+    // ============================================================
+    //  CANVAS PARTICLE NETWORK
+    // ============================================================
+    const canvas = document.getElementById('bg-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let mouse = { x: null, y: null };
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+    window.addEventListener('mousemove', e => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+    });
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 1.5 + 0.3;
+        this.vx = (Math.random() - 0.5) * 0.3;
+        this.vy = (Math.random() - 0.5) * 0.3;
+        this.opacity = Math.random() * 0.35 + 0.05;
+        this.hue = Math.random() > 0.6 ? 185 : 260;
+      }
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+        if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+        if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+
+        // Mouse interaction
+        if (mouse.x !== null) {
+          const dx = mouse.x - this.x;
+          const dy = mouse.y - this.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 120) {
+            this.x -= dx * 0.008;
+            this.y -= dy * 0.008;
+          }
+        }
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `hsla(${this.hue}, 85%, 65%, ${this.opacity})`;
+        ctx.fill();
+      }
+    }
+
+    for (let i = 0; i < 70; i++) particles.push(new Particle());
+
+    function drawConnections() {
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 130) {
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.strokeStyle = `rgba(0, 240, 255, ${0.04 * (1 - dist / 130)})`;
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    function animateCanvas() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => { p.update(); p.draw(); });
+      drawConnections();
+      requestAnimationFrame(animateCanvas);
+    }
+    animateCanvas();
+
+    // ============================================================
+    //  CUSTOM CURSOR & MAGNETIC BUTTONS
+    // ============================================================
+    const cursorDot = document.querySelector('.cursor-dot');
+    const cursorOutline = document.querySelector('.cursor-outline');
+    let isCursorHovering = false;
+
+    // Only show custom cursor on non-touch devices
+    if (window.matchMedia("(pointer: fine)").matches) {
+      document.body.style.cursor = 'none';
+
+      gsap.set(cursorDot, { xPercent: -50, yPercent: -50 });
+      gsap.set(cursorOutline, { xPercent: -50, yPercent: -50 });
+
+      const ctxDot = gsap.quickTo(cursorDot, "x", { duration: 0.1, ease: "power3" });
+      const ctyDot = gsap.quickTo(cursorDot, "y", { duration: 0.1, ease: "power3" });
+      const ctxOutline = gsap.quickTo(cursorOutline, "x", { duration: 0.8, ease: "power3" });
+      const ctyOutline = gsap.quickTo(cursorOutline, "y", { duration: 0.8, ease: "power3" });
+
+      window.addEventListener("mousemove", (e) => {
+        ctxDot(e.clientX);
+        ctyDot(e.clientY);
+        ctxOutline(e.clientX);
+        ctyOutline(e.clientY);
+      });
+
+      // Hover states for links and buttons
+      document.querySelectorAll('a, button, .mission-visual, .stat-card').forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          isCursorHovering = true;
+          gsap.to(cursorOutline, { scale: 1.8, backgroundColor: 'rgba(0, 240, 255, 0.1)', borderColor: 'transparent', duration: 0.3 });
+          gsap.to(cursorDot, { scale: 0, duration: 0.3 });
+        });
+        el.addEventListener('mouseleave', () => {
+          isCursorHovering = false;
+          gsap.to(cursorOutline, { scale: 1, backgroundColor: 'transparent', borderColor: 'rgba(0, 240, 255, 0.5)', duration: 0.3 });
+          gsap.to(cursorDot, { scale: 1, duration: 0.3 });
+        });
+      });
+
+      // Magnetic Buttons
+      document.querySelectorAll('.btn-primary, .btn-ghost, .social-pill').forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+          const rect = btn.getBoundingClientRect();
+          const x = e.clientX - rect.left - rect.width / 2;
+          const y = e.clientY - rect.top - rect.height / 2;
+
+          gsap.to(btn, {
+            x: x * 0.4,
+            y: y * 0.4,
+            duration: 0.6,
+            ease: 'power3.out'
+          });
+        });
+
+        btn.addEventListener('mouseleave', () => {
+          gsap.to(btn, {
+            x: 0,
+            y: 0,
+            duration: 0.6,
+            ease: 'elastic.out(1, 0.3)'
+          });
+        });
+      });
+    }
+
+    // ============================================================
+    //  UTILITIES: TEXT SPLITTING
+    // ============================================================
+    // A simple text splitter to wrap words/characters in spans for GSAP
+    function splitTextToSpans(selector, type = 'words') {
+      const elements = document.querySelectorAll(selector);
+      elements.forEach(el => {
+        const text = el.innerText;
+        el.innerHTML = '';
+
+        if (type === 'words') {
+          const words = text.split(' ');
+          words.forEach((word, i) => {
+            const span = document.createElement('span');
+            span.className = 'split-word';
+            span.style.overflow = 'hidden';
+            span.style.display = 'inline-block';
+            span.style.verticalAlign = 'top';
+
+            const innerSpan = document.createElement('span');
+            innerSpan.className = 'split-inner';
+            innerSpan.style.display = 'inline-block';
+            innerSpan.innerText = word + (i < words.length - 1 ? ' ' : '');
+
+            span.appendChild(innerSpan);
+            el.appendChild(span);
+          });
+        }
+      });
+    }
+
+    // ============================================================
+    //  GSAP SCROLL ANIMATIONS
+    // ============================================================
+    gsap.registerPlugin(ScrollTrigger);
+
+    function initAnimations() {
+
+      // --- TEXT SPLITTING ---
+      splitTextToSpans('.section-title', 'words');
+
+      // --- HERO TEXT REVEAL ---
+      const heroTl = gsap.timeline({ delay: 0.2 });
+
+      heroTl
+        .to('.hero-eyebrow', {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: 'power3.out'
+        })
+        .to('.hero-title .line-inner', {
+          y: 0,
+          duration: 1.2,
+          ease: 'power4.out',
+          stagger: 0.15
+        }, '-=0.6')
+        .to('.hero-subtitle', {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: 'power3.out'
+        }, '-=0.5')
+        .to('.hero-cta-group', {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: 'power3.out'
+        }, '-=0.4')
+        .to('.scroll-indicator', {
+          opacity: 1,
+          duration: 1,
+          ease: 'power2.out'
+        }, '-=0.2');
+
+      // --- HERO PARALLAX ON SCROLL ---
+      gsap.to('.hero-content', {
+        y: -150,
+        opacity: 0,
+        filter: 'blur(10px)',
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.hero',
+          start: 'top top',
+          end: '80% top',
+          scrub: 1
+        }
+      });
+
+      gsap.to('.hero-video', {
+        y: 200,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.hero',
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 1
+        }
+      });
+
+      gsap.to('.scroll-indicator', {
+        opacity: 0,
+        scrollTrigger: {
+          trigger: '.hero',
+          start: '10% top',
+          end: '20% top',
+          scrub: true
+        }
+      });
+
+      // --- SECTION HEADERS ---
+      document.querySelectorAll('.section').forEach(section => {
+        const eyebrow = section.querySelector('.section-eyebrow');
+        const titleWords = section.querySelectorAll('.section-title .split-inner');
+        const desc = section.querySelector('.section-desc');
+
+        const headerTl = gsap.timeline({
+          scrollTrigger: {
+            trigger: section,
+            start: 'top 75%',
+            end: 'top 30%',
+            toggleActions: 'play none none none'
+          }
+        });
+
+        if (eyebrow) {
+          headerTl.fromTo(eyebrow,
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' }
+          );
+        }
+        if (titleWords.length) {
+          headerTl.fromTo(titleWords,
+            { y: '110%' },
+            { y: '0%', duration: 1, ease: 'power4.out', stagger: 0.05 },
+            '-=0.5'
+          );
+        }
+        if (desc) {
+          headerTl.fromTo(desc,
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' },
+            '-=0.5'
+          );
+        }
+      });
+
+      // --- ORIGIN NARRATIVE REVEAL ---
+      gsap.utils.toArray('.origin-narrative p').forEach((p, i) => {
+        gsap.fromTo(p,
+          { opacity: 0, y: 30, filter: 'blur(10px)' },
+          {
+            opacity: 1, y: 0, filter: 'blur(0px)', duration: 1.2, ease: 'power3.out',
+            scrollTrigger: {
+              trigger: p,
+              start: 'top 85%',
+              toggleActions: 'play none none none'
+            },
+            delay: i * 0.15
+          }
+        );
+      });
+
+      // --- STAT CARDS ---
+      gsap.utils.toArray('.stat-card').forEach((card, i) => {
+        gsap.fromTo(card,
+          { opacity: 0, y: 40, scale: 0.95 },
+          {
+            opacity: 1, y: 0, scale: 1,
+            duration: 0.8,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 85%',
+              toggleActions: 'play none none none'
+            },
+            delay: i * 0.1
+          }
+        );
+      });
+
+      // --- SKILL NODES — STAGGERED ---
+      gsap.utils.toArray('.skill-node').forEach((node, i) => {
+        gsap.to(node, {
+          opacity: 1,
+          y: 0,
+          duration: 0.7,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: node,
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          delay: i * 0.06
+        });
+      });
+
+      // --- MARQUEE INFINITE SCROLL ---
+      const marqueeInner = document.querySelector('.marquee-inner');
+      if (marqueeInner) {
+        gsap.to('.marquee-inner', {
+          xPercent: -50,
+          ease: 'none',
+          duration: 25,
+          repeat: -1
+        });
+
+        // Slight interaction with scroll speed
+        let lastScrollY = window.scrollY;
+        window.addEventListener('scroll', () => {
+          let st = window.scrollY;
+          let delta = st - lastScrollY;
+          gsap.to('.marquee-inner', { x: `-=${delta * 0.5}`, duration: 0.5, ease: "power1.out", overwrite: "auto" });
+          lastScrollY = st;
+        });
+      }
+
+      // --- MISSIONS HORIZONTAL SCROLL ---
+      let mm = gsap.matchMedia();
+      mm.add("(min-width: 769px)", () => {
+        const missionsContainer = document.querySelector('.mission-list');
+        const missions = gsap.utils.toArray('.mission');
+
+        if (missionsContainer && missions.length > 0) {
+          // Calculate the total width to scroll
+          const totalWidth = missionsContainer.scrollWidth - window.innerWidth + 100; // Adding some padding
+
+          gsap.to(missionsContainer, {
+            x: -totalWidth,
+            ease: "none",
+            scrollTrigger: {
+              trigger: ".missions",
+              pin: true,
+              scrub: 1, // Smooth scrolling
+              start: "center center",
+              end: () => `+=${totalWidth}`,
+              invalidateOnRefresh: true,
+              anticipatePin: 1
+            }
+          });
+
+          // Add reveal animations to the missions as they enter the screen horizontally
+          missions.forEach((mission, i) => {
+            const visual = mission.querySelector('.mission-visual');
+            const content = mission.querySelector('.mission-content');
+            const isFirst = i === 0;
+
+            // Parallax effect on the image inside the visual
+            if (visual) {
+              const img = visual.querySelector('img');
+              if (img) {
+                gsap.to(img, {
+                  xPercent: 30, // image moves opposite to container
+                  ease: "none",
+                  scrollTrigger: {
+                    trigger: ".missions",
+                    start: "center center",
+                    end: () => `+=${totalWidth}`,
+                    scrub: true,
+                  }
+                });
+              }
+            }
+
+            // Reveal content as it scrolls in (except first one which is already visible)
+            if (!isFirst) {
+              gsap.fromTo(mission,
+                { opacity: 0.2, scale: 0.8 },
+                {
+                  opacity: 1, scale: 1,
+                  duration: 1,
+                  ease: 'power2.out',
+                  scrollTrigger: {
+                    trigger: mission,
+                    containerAnimation: gsap.getById("missions-scroll"), // if this was a named tween
+                    start: "left 80%",
+                    end: "left 20%",
+                    scrub: true
+                  }
+                }
+              );
+            }
+          });
+        }
+      });
+
+      // Simple vertical reveal for mobile
+      mm.add("(max-width: 768px)", () => {
+        gsap.utils.toArray('.mission').forEach((mission, i) => {
+          gsap.fromTo(mission,
+            { opacity: 0, y: 50 },
+            {
+              opacity: 1, y: 0,
+              duration: 0.8,
+              ease: 'power3.out',
+              scrollTrigger: {
+                trigger: mission,
+                start: 'top 85%',
+                toggleActions: 'play none none none'
+              }
+            }
+          );
+        });
+      });
+
+      // --- PHILOSOPHY QUOTE ---
+      gsap.fromTo('.philosophy-quote',
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1, y: 0, duration: 1.2, ease: 'power3.out',
+          scrollTrigger: {
+            trigger: '.philosophy-quote',
+            start: 'top 75%',
+            toggleActions: 'play none none none'
+          }
+        }
+      );
+
+      // --- PHILOSOPHY PILLARS ---
+      gsap.utils.toArray('.pillar').forEach((pillar, i) => {
+        gsap.fromTo(pillar,
+          { opacity: 0, y: 50 },
+          {
+            opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
+            scrollTrigger: {
+              trigger: pillar,
+              start: 'top 85%',
+              toggleActions: 'play none none none'
+            },
+            delay: i * 0.12
+          }
+        );
+      });
+
+      // --- ACHIEVEMENT HEADER ---
+      const achHeader = document.querySelector('.achievement-header');
+      if (achHeader) {
+        gsap.fromTo(achHeader.children,
+          { opacity: 0, y: 20 },
+          {
+            opacity: 1, y: 0, duration: 0.8, ease: 'power3.out', stagger: 0.15,
+            scrollTrigger: {
+              trigger: achHeader,
+              start: 'top 80%',
+              toggleActions: 'play none none none'
+            }
+          }
+        );
+      }
+
+      // --- ACHIEVEMENT GALLERY ---
+      gsap.utils.toArray('.achievement-item').forEach((item, i) => {
+        gsap.to(item, {
+          opacity: 1,
+          clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+          duration: 1.2,
+          ease: 'power4.inOut',
+          scrollTrigger: {
+            trigger: item,
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          delay: (i % 3) * 0.15
+        });
+      });
+
+      // --- CONTACT FORM ---
+      gsap.fromTo('.contact-form',
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1, y: 0, duration: 1, ease: 'power3.out',
+          scrollTrigger: {
+            trigger: '.contact-form',
+            start: 'top 80%',
+            toggleActions: 'play none none none'
+          }
+        }
+      );
+
+      gsap.fromTo('.contact-socials',
+        { opacity: 0, y: 20 },
+        {
+          opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
+          scrollTrigger: {
+            trigger: '.contact-socials',
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          }
+        }
+      );
+
+      // --- PARALLAX SECTIONS ---
+      document.querySelectorAll('.divider').forEach(div => {
+        gsap.fromTo(div.querySelector('.divider-line'),
+          { scaleX: 0 },
+          {
+            scaleX: 1,
+            duration: 1,
+            ease: 'power2.inOut',
+            scrollTrigger: {
+              trigger: div,
+              start: 'top 95%',
+              toggleActions: 'play none none none'
+            }
+          }
+        );
+      });
+    }
+
+    // ============================================================
+    //  SCROLL PROGRESS BAR
+    // ============================================================
+    const progressBar = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = ((scrolled / max) * 100) + '%';
+    });
+
+    // ============================================================
+    //  SMOOTH SCROLL FOR NAV
+    // ============================================================
+    document.querySelectorAll('.nav-links a, .mobile-nav-links a, .btn-primary[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // ============================================================
+    //  MOBILE MENU TOGGLE
+    // ============================================================
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    const mobileOverlay = document.querySelector('.mobile-nav-overlay');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-links a');
+
+    if (mobileBtn && mobileOverlay) {
+      mobileBtn.addEventListener('click', () => {
+        mobileBtn.classList.toggle('active');
+        mobileOverlay.classList.toggle('active');
+        document.body.style.overflow = mobileOverlay.classList.contains('active') ? 'hidden' : '';
+      });
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileBtn.classList.remove('active');
+          mobileOverlay.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+
+    // ============================================================
+    //  2D ANIMATED CHARACTER — GSAP Scroll-Driven
+    // ============================================================
+    const speechBubble = document.getElementById('speech-bubble');
+    const speechText = document.getElementById('speech-text');
+    const characterGuide = document.getElementById('character-guide');
+    const charSvg = document.querySelector('.character-svg');
+
+    // Section-aware dialogues
+    const sectionDialogues = {
+      hero: ["Hey there! 👋", "I'm Jai Kumar!", "A Full-Stack Developer", "Scroll to explore my journey! ↓"],
+      origin: ["This is where it all began...", "Curious kid → Developer 🚀", "B.Tech in Computer Engineering"],
+      skills: ["These are my superpowers! ⚡", "10+ technologies mastered", "Always learning something new"],
+      missions: ["Check out my creations! 🎨", "Every project tells a story", "Built with passion & code"],
+      philosophy: ["My development philosophy 🧠", "Clean code = Happy users", "Ship fast, iterate faster"],
+      achievements: ["Our biggest milestone! 🏆", "We launched a real product!", "IPTV — free for all users"],
+      contact: ["Let's connect! 💬", "Got an idea? Let's build it!", "I'd love to hear from you"]
+    };
+
+    let currentSection = 'hero';
+    let sectionDialogueIdx = 0;
+    let charTypingTimeout = null;
+    let isCharTyping = false;
+
+    function typeCharText(text, callback) {
+      let ci = 0;
+      isCharTyping = true;
+      speechText.textContent = '';
+      speechBubble.style.opacity = '1';
+      speechBubble.style.transform = 'translateY(0) scale(1)';
+
+      function typ() {
+        if (ci < text.length) {
+          speechText.textContent += text[ci];
+          ci++;
+          charTypingTimeout = setTimeout(typ, 30 + Math.random() * 20);
+        } else {
+          isCharTyping = false;
+          if (callback) callback();
+        }
+      }
+      typ();
+    }
+
+    function playSectionDialogue() {
+      const msgs = sectionDialogues[currentSection];
+      if (!msgs || msgs.length === 0) return;
+
+      const text = msgs[sectionDialogueIdx % msgs.length];
+      typeCharText(text, () => {
+        charTypingTimeout = setTimeout(() => {
+          speechBubble.style.opacity = '0';
+          speechBubble.style.transform = 'translateY(8px) scale(0.95)';
+          charTypingTimeout = setTimeout(() => {
+            sectionDialogueIdx++;
+            playSectionDialogue();
+          }, 500);
+        }, 2800);
+      });
+    }
+
+    function switchSection(newSection) {
+      if (newSection === currentSection) return;
+      currentSection = newSection;
+      sectionDialogueIdx = 0;
+      clearTimeout(charTypingTimeout);
+      isCharTyping = false;
+      speechBubble.style.opacity = '0';
+      setTimeout(playSectionDialogue, 600);
+    }
+
+    // Start character entrance after loader
+    setTimeout(() => {
+      if (characterGuide) {
+        gsap.to(characterGuide, { opacity: 1, duration: 1.5, ease: 'power2.out' });
+        setTimeout(playSectionDialogue, 1200);
+      }
+    }, 2200);
+
+    // Blink animation
+    const blinkRects = document.querySelectorAll('.char-blink rect');
+    function blink() {
+      blinkRects.forEach(r => r.setAttribute('opacity', '1'));
+      setTimeout(() => blinkRects.forEach(r => r.setAttribute('opacity', '0')), 150);
+      setTimeout(blink, 2500 + Math.random() * 3500);
+    }
+    setTimeout(blink, 2500);
+
+    // ---- GSAP Scroll-driven character movement ----
+    const sections = ['hero', 'origin', 'skills', 'missions', 'philosophy', 'achievements', 'contact'];
+
+    // Check if mobile for scaling
+    const isMobile = window.innerWidth <= 600;
+    const baseScale = isMobile ? 0.65 : 1;
+
+    const charPositions = {
+      hero: { x: '5vw', y: 0, rotate: 0, headTilt: 0, scale: baseScale * 1 },
+      origin: { x: '3vw', y: 0, rotate: -2, headTilt: 5, scale: baseScale * 0.95 },
+      skills: { x: isMobile ? '65vw' : '75vw', y: 0, rotate: 3, headTilt: -5, scale: baseScale * 0.92 },
+      missions: { x: '4vw', y: 0, rotate: -1, headTilt: 3, scale: baseScale * 0.95 },
+      philosophy: { x: isMobile ? '62vw' : '72vw', y: 0, rotate: 2, headTilt: -3, scale: baseScale * 0.9 },
+      achievements: { x: '5vw', y: 0, rotate: -2, headTilt: 4, scale: baseScale * 0.93 },
+      contact: { x: isMobile ? '60vw' : '70vw', y: 0, rotate: 0, headTilt: 0, scale: baseScale * 0.95 }
+    };
+
+    // Detect current section and animate character
+    sections.forEach(sectionId => {
+      const el = document.getElementById(sectionId);
+      if (!el) return;
+
+      ScrollTrigger.create({
+        trigger: el,
+        start: 'top 60%',
+        end: 'bottom 40%',
+        onEnter: () => animateCharToSection(sectionId),
+        onEnterBack: () => animateCharToSection(sectionId)
+      });
+    });
+
+    function animateCharToSection(sectionId) {
+      const pos = charPositions[sectionId];
+      if (!pos || !characterGuide) return;
+
+      switchSection(sectionId);
+
+      // Determine if character is moving left or right for walking effect
+      const isRight = parseInt(pos.x) > 50;
+
+      // Animate character position using hardware acceleration
+      gsap.to(characterGuide, {
+        x: pos.x,
+        rotation: pos.rotate,
+        scale: pos.scale,
+        duration: 1.5,
+        ease: 'power3.inOut',
+        overwrite: true
+      });
+
+      // Flip character when on right side
+      gsap.to(charSvg, {
+        scaleX: isRight ? -1 : 1,
+        duration: 0.6,
+        ease: 'power2.inOut'
+      });
+
+      // Head tilt
+      gsap.to('.char-head', {
+        rotation: pos.headTilt,
+        transformOrigin: '50% 100%',
+        duration: 0.8,
+        ease: 'power2.out'
+      });
+
+      // Walking leg animation
+      gsap.to('.char-leg-left', {
+        rotation: 15,
+        transformOrigin: '50% 0%',
+        duration: 0.2,
+        yoyo: true,
+        repeat: 3,
+        ease: 'sine.inOut'
+      });
+      gsap.to('.char-leg-right', {
+        rotation: -15,
+        transformOrigin: '50% 0%',
+        duration: 0.2,
+        yoyo: true,
+        repeat: 3,
+        ease: 'sine.inOut',
+        delay: 0.1
+      });
+
+      // Body lean
+      gsap.to('.char-torso', {
+        rotation: pos.rotate * 0.5,
+        transformOrigin: '50% 100%',
+        duration: 1,
+        ease: 'power2.out'
+      });
+    }
+
+    // Gentle floating bob based on scroll velocity
+    let lastScrollY = 0;
+    window.addEventListener('scroll', () => {
+      if (!characterGuide) return;
+      const velocity = Math.abs(window.scrollY - lastScrollY);
+      const bob = Math.min(velocity * 0.15, 8);
+      gsap.to(characterGuide, {
+        y: -bob,
+        duration: 0.3,
+        ease: 'power2.out',
+        overwrite: 'auto'
+      });
+      gsap.to(characterGuide, {
+        y: 0,
+        duration: 0.8,
+        ease: 'elastic.out(1, 0.4)',
+        delay: 0.3,
+        overwrite: false
+      });
+      lastScrollY = window.scrollY;
+    });
+  </script>
+</body>
+
+</html>
